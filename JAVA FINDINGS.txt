@@ -36,11 +36,14 @@ MAIN() Method++++++++++++++++++++++++++++++++++++++++++++++
 ~ But JVM calls main() method which receives string array as arguments      only.
 ------------------------------------------------
 
+
 Objects+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Refer ......................................Javadocs.Oracle
 ~ Instantiation: The new keyword is a Java operator that creates the object.
 	> Initialization: The new operator is followed by a call to a constructor, which initializes the new 		        object.
 --------------------------------------------------------------------------
+
+
 DATA TYPES+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ NARROWING or DOWNCASTING in java .
    So, when you type 12 in your program, thats an int literal, as opposed to 12L, which is a long.        And when you type       12.3, thats a    double literal, as opposed to 12.3F, which is a float.
@@ -55,6 +58,7 @@ DATA TYPES++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ Always suffix FLOAT value with the “f” else compiler will consider it as double
 ------------------------------------------------
 
+
 ACCESS MODIFIERS & SPECIFIERS  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ Public >> visible everwhere evenn outside the package.
    Protected >> Visible within the same class and in the child class within same and other package.
@@ -65,11 +69,13 @@ ACCESS MODIFIERS & SPECIFIERS  +++++++++++++++++++++++++++++++++++++++++++++++++
 				2) default (when no access specifier is specified)
 ------------------------------------------------
 
+
 METHODS+++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ Can't have another method directly INSIDE another method.
  ~ Method OVERLOADING
 	> Not possible with just changing return type.
 ------------------------------------------------
+
 
 CONSTRUCTORS+++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ CONSTRUCTORS are not members of class...........................14:29 03-12-2021
@@ -89,8 +95,11 @@ CONSTRUCTORS+++++++++++++++++++++++++++++++++++++++++++++++++++++
 		           > It does not allow a class to be sub-classed.
 ------------------------------------------------
 
-~ Method OVERLOADING
+
+~ Method OVERLOADING++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	> Not possible with just changing return type.
+------------------------------------------------------------------------------------------------
+
 
 STATIC+++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ A STATIC method cannot access a NON-STATIC member:
@@ -101,9 +110,11 @@ STATIC+++++++++++++++++++++++++++++++++++++++++++++++++++++
 	> We can apply static keyword with variables, methods, blocks and nested classes.
 ------------------------------------------------
 
+
 FINAL+++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ A blanck Final variable can only be initialized in a constructor.
 ------------------------------------------------
+
 
 INHERITANCE+++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ object of sub class inherits the members of parent class.
@@ -140,43 +151,47 @@ AGGREGATION+++++++++++++++++++++++++++++++++++++++++++++++++++++
 	  are also binded together. ex. STUDENT name , id---ADDRESS house name,city name.
 ~ U can do that by passing Req. classe's object(after stuffing it with info) from the main classes object from the main method 
 	> and assign that object to the its counterpart ( the data member object that we created ).
-------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+
 
 POLYMORPHISM+++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ Since method invocation is determined by the JVM not compiler, it is known as RUNTIME polymorphism.
 ~ A method is overridden, NOT the  MEMBER VARIABLES, so runtime polymorphism can't be achieved by data members.
-------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
 
-INTERFACE+++++++++++++++++++++++++++++++++++++++++++++++++++++
+INTERFACE++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ The Java compiler adds Public and Abstract keywords before the interface Method. Moreover, it adds Public, Static and          Final keywords before data members.
 	> So, after implementin user can not reduce the visibility of inherited methods of interface.
 ~ An Abstract class implementing an interface doesn't has to provide implementation to all its methods.
 ~ Can perform multiple inheritance with Interface because implemntation is provided in the class implementing the    interface.
 ~ An interface extends another interface & not another class.
-------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------
 
 
-PACKAGE+++++++++++++++++++++++++++++++++++++++++++++++++++++
+PACKAGE++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ All classes of the package which we wish to access outside the package must be declared public.
 ~ You don't have to Inherit classes after importing to use them,
 	> Just import , and make sure they are public.
 ~ STATIC IMPORTS
 	> SYNTAX " import static PACKAGE.CLASS.* ", i.e u can only access a class and all its static members.
-------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
+
 
 WRAPPER CLASS+++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ belong to java.lang package.
 ~ The Integer class has a static method that returns a String object representing the specified int parameter. 
 	> String str1 = Integer.toString(a);
------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
 
-ARRAY++++++++++++++++++++++++++++++++++++++++++++
+
+ARRAY++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ for each loop :-
 	> SYNTAX --> for( int i : array )
 			System.out.println( i ); <---------------NOTE
--------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
 
-STRING Class+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+STRING Class++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ Java provides three classes to represent a sequence of characters: String, StringBuffer, and StringBuilder.
 ~ when you make a String ob then you can access the various methods of String class using that object   aswell
 	> for ex. ob.equals(), ob.equalsIgnoreCase() , ob.Compareto() , ob.substring()
@@ -185,7 +200,8 @@ STRING Class+++++++++++++++++++++++++++++++++++++++++++++++++++++
 		>> After a string literal, all the + will be treated as string concatenation operator.
 ~ SPLIT ( )
 	> can provide set of regex as well. ex. instead of split ( a ) , split ( a, m , - , .? .... )
-------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
+
 
 toString () Method++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	~Object Class...........................................default inheritance of toString method...................GfG
@@ -203,7 +219,8 @@ toString () Method++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 		SYNTAX  :- static String valueOf(int num)
 ---------------------------------------------------------------------
 
-ValueOf ()+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ValueOf ()++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	~ String Class
 		>  static String valueOf(int num)
 		>> gives the String representation of any primitive type.
@@ -212,9 +229,9 @@ ValueOf ()+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 			>> is used to return an Integer instance.
 		2> static Integer valueOf(String str)
 			>> is used to return an Integer object, holding the value of the specified String 			   		 str.
-------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
 
-EXCEPTION Handling+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+EXCEPTION Handling+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ Method throwing the exception must handle it as well.
 ~ USER DEFINED Exceptions
 	> public Exception(String message) ==> Constructs a new exception with the specified detail 		message.
@@ -225,7 +242,8 @@ EXCEPTION Handling+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
    using catch block or the method must declare it using throws declaration.
 ~ By default, Checked Exceptions are not forwarded in calling chain (propagated).
 	>> whereas the unChecked exceptions are propagated.
----------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+
 
 ENUM+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 Q Why printing an enum Constant prints the constant's name ?
@@ -238,7 +256,8 @@ Ans. because the toString() method is overriden in Enum class implicitly, and as
 	>>  when u print an Enum array using values() method 
 		the base index just prints the enum " objects " in the array using toString() method.
 ~ Enum consists of PRIVATE CONSTRUCTOR that's why we cannot extend/inherit an enum class.
-------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+
 
 MultiThreading++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ start()
@@ -248,13 +267,14 @@ MultiThreading++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     	   public final static int NORM_PRIORITY = 5;
     	   public final static int MAX_PRIORITY = 10;
 ~ If you sleep a thread for the specified time, the thread scheduler picks up another thread and    so on.
--------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------
 
-MISC++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+MISC+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ Getname ( ) 
 	> Thread class
 		>> Thread.getName( );
 	> java.lang.class class
 		>> Invoke using object_Name.getClass( ).getName( )  	OR
 		>> Class_Name.class.getName( ) 
-----------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
