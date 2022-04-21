@@ -1,0 +1,82 @@
+JAVA : JAVATPOINT , BEGINNERSBOOK
+
+~ Java data types............................................13:14 18-05-2021
+~ Naming convention for classe , funcitons & constants..............20-05-2021
+~ Instance variable , local variable and static variable.
+~ 3 ways to initialize an object in java.
+~ New Keyword.
+~ Anonymous object.
+~ Interface .....................breif.........................17:55 20-05-2021
+~ Access Modifiers .................................webpage( Geeks )....................breif
+~ Methods.
+~ Constructors in JAVA
+	> copy constructor in java.
+	> Constructor chaining..............................Beginners book
+~ This keyword
+	>6 uses. 
+~ Static keyword
+	> variable , method , block , nested class.
+	> two main uses.
+	> Static nested class.
+~ Inheritance
+	> protected access modifier
+	 
+~ Method Overloading
+~ Type promotion.
+~ Aggregation....................................................13:05 21-11-2021
+	> Association.
+~ Covariant return type...........................................14:59 01-12-2021
+~ Instance initializer bock.......................breif............................16:26 01-12-2021
+~ Final keyword..............................16:44 01-12-2021 
+~ Polymorphism................................20:28 02-12-2021
+	> Dynamic method dispatch
+	> Upcasting
+~ Instanceof operator.................................20:28 02-12-2021      
+~ Abstract class & Methods...................................20:16 05-12-2021
+~ Interface...............................................20:17 05-12-2021    
+~ Package
+	> Static Imports................................20:08 15-02-2022
+~ JAVA Array
+	> declaring , instantiation and initialization
+	> passing  & returning an array in a method
+	> passing & returning anonymous array.
+	> Multidimensional arrays.
+	> Jagged arrays.......................14:17 14-02-2022
+	> System.arraycopy( sourceArray, sourceArrayIndex, DestArray, DestArrayIndex , length );
+	> java.util.Arrays.copyOfRange( sourceArray, SourceArrayIndex , length );
+~ Wrapper class
+~ toString()
+	> Integer class -> Integer.toString(i);
+	> Object class -> toString();...........................javaTpoint toString() method.
+~ Object class
+	> methods of Object class.
+~ Math class
+	> Math.abs() , etc...................................20:21 16-02-2022
+~ Integer.MIN_VALUE & max value.
+~ Object clone ...........................................PENDING
+~ strictfp............................LATER
+~ javadoc tool.....................PENDING
+~ passing arguments to MAIN method through Command Line Arguments.................PENDING
+~ String
+	> Two ways to create String object
+		>> To create Mutable and Immutable strings
+	> equals(), equalsIgnoreCase(), == , compareTo().........................16:05 25-02-2022
+	> String concatenation. --> (+) operator , concat() , StringBuilder append() .
+	  split( ), substring( )
+	> toUpperCase(), trim() ,  startsWith(), charAt(), intern(), replace()
+	> diff valueOf( ) / parseInt( )..........................................22:10 28-02-2022
+~ StringBuffer class
+	> append, insert() , delete() , replace(), reverse()
+	> Diff btwn String and StringBuffer.
+~ Exception Handling..............................................F-21:32 26-03-2022
+	~ EH rules while method Overiiding.
+~ Inner class....................................I 27-03-2022.......F-10:19 28-03-2022
+~ System.currentTimeMillis()	
+~ MultiThreading 
+	> Creating a thread.....................OracleJacaDocs.............javaTpoint
+	> Thread Schduler
+		> thread scheduling algorithms.
+
+MISC+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~ String name = obj.getClass().getName();.................................. 14-02-2022
+            b----------------------------------------
