@@ -1,0 +1,260 @@
+--
+---
+~ JAVA package includes subpackages like lang , util , awt , applet , net , io etc.
+~ There can be only one public class in a java source file and it must be saved by the public class name.
+~ "Class" is a "Java class" that provide methods to manipulate "Java class" while "class" is a Java keyword     used to declare a "Java class".
+~ inbuilt methods provided by the pre-defined classes are generally static ex:-
+	> toString(i) method of Integer classs and all the methods of Math class.
+~  println will leave the cursor on the next line , not print the output on the next line.
+~ INSTANCEOF operator doesnot requires brackets.
+~  Every class in Java is directly or indirectly derived from the Object class, henceforth it is a child of the        Object class............................more GfG.
+
+RUNNING PROG++++++++++++++++++++++++++++++++++++++++++++++
+~ You Can Run the java program in two ways from CMD.
+	> Directly run the java program by ----> " java programName.java "
+	In this type compilation and Execution happens at runtime. 
+	That is Byte codes is generated and executed immediately(works as a interpreter) 
+	So,You must use the superclass(Containing the main method) at first followed by 
+	other compound classes.
+		>> Note: No .class file will generate. That means, it will generate 
+		  byte code internally and will execute. Programmer's cannot view the class file.
+
+	> In Second type, First, you should compile,-----> " javac programName.java 
+		>> It will generate the example_program.class . Then, Execute the class file using,
+				" java example_program "
+		>> NOTE: Here, the order of writing classes doesn't impact. 
+		    you can write the classes in any order. it will work fine.
+~ Running a programme within a package from CMD
+	> The same above methods if the class with MAIN method is the first class in the order.
+				OTHERWISE
+	> return to directory in which the concerned package is present and type
+		>> "java  PACKAGE_NAME.CLASS_NAME." 
+------------------------------------------------
+
+MAIN() Method++++++++++++++++++++++++++++++++++++++++++++++
+~ Why is MAIN() method static ?
+~ But JVM calls main() method which receives string array as arguments      only.
+------------------------------------------------
+
+Objects+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Refer ......................................Javadocs.Oracle
+~ Instantiation: The new keyword is a Java operator that creates the object.
+	> Initialization: The new operator is followed by a call to a constructor, which initializes the new 		        object.
+--------------------------------------------------------------------------
+DATA TYPES+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~ NARROWING or DOWNCASTING in java .
+   So, when you type 12 in your program, thats an int literal, as opposed to 12L, which is a long.        And when you type       12.3, thats a    double literal, as opposed to 12.3F, which is a float.
+
+~ Java is a STATICALLY-TYPED programming language.
+
+~ When ADDING TWO BYTES you need to expicitely typecast :
+	byte a = 10;	byte b= 20;
+	byte c = (byte)(a+b);
+   because compiler converts the result to int to ensure no loss of data since byte(-127 to -128).
+
+~ Always suffix FLOAT value with the “f” else compiler will consider it as double
+------------------------------------------------
+
+ACCESS MODIFIERS & SPECIFIERS  +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~ Public >> visible everwhere evenn outside the package.
+   Protected >> Visible within the same class and in the child class within same and other package.
+   Default >> Visible  everywhere , but only within the same package.
+   Private.
+~ classes and interfaces themselves can have only two access specifiers when declared 						outside any other class.
+				1) public
+				2) default (when no access specifier is specified)
+------------------------------------------------
+
+METHODS+++++++++++++++++++++++++++++++++++++++++++++++++++++
+~ Can't have another method directly INSIDE another method.
+ ~ Method OVERLOADING
+	> Not possible with just changing return type.
+------------------------------------------------
+
+CONSTRUCTORS+++++++++++++++++++++++++++++++++++++++++++++++++++++
+~ CONSTRUCTORS are not members of class...........................14:29 03-12-2021
+~ CONSTRUCTORS > It is called when an instance of the class is created. At the time of calling constructor, memory for the			   object is allocated in the memory.
+~ Constructor call must be the first statement in a constructor.
+	> You can not call constructor from anywhere (not even from another method) apart form eigther during
+		* during object creation
+			OR 
+		* from the first statement  of another constructor
+~ COPY CONSTRUCTORS > There is NO COPY constructor in java. However, we can copy the VALUES from one object to			   another like copy constructor in C++.
+~ SCANNER( SYSTEM.IN) It means it is going to read from the standard input stream of the program.
+~ CONSTRUCTOR OVERRIDING , ABSTRACT CLASS CONSTRUCTOR.............................webpage beginners book
+~ CHAINING > As a rule, constructors with fewer arguments should call those with more.
+ 	~~ PRIVATE CONSTRUCTOR > 
+		           > If you make any class constructor private, you cannot 
+			create the instance of that class from outside the class.
+		           > It does not allow a class to be sub-classed.
+------------------------------------------------
+
+~ Method OVERLOADING
+	> Not possible with just changing return type.
+
+STATIC+++++++++++++++++++++++++++++++++++++++++++++++++++++
+~ A STATIC method cannot access a NON-STATIC member:
+	> unless you use the object along with dot operator. 
+~ to access a STATIC MEMBER from another class "CLASS_NAME.static member" syntax will have to be used.
+~ STATIC METHODS can be accessed from other STATIC / NON-STATIC methods without using objects.
+~ A class can be made static only if it is a nested class.
+	> We can apply static keyword with variables, methods, blocks and nested classes.
+------------------------------------------------
+
+FINAL+++++++++++++++++++++++++++++++++++++++++++++++++++++
+~ A blanck Final variable can only be initialized in a constructor.
+------------------------------------------------
+
+INHERITANCE+++++++++++++++++++++++++++++++++++++++++++++++++++++
+~ object of sub class inherits the members of parent class.
+~ Whenever you create the instance of subclass, an instance of parent class    is created implicitly which is referred by SUPER reference variable.
+~ You cannot use this or super keyword in the main method.
+~ Use INHERITANCE when u need IS-A relationship , otherwise HAS-A    relationship;
+~ COVARIANT RETURN TYPE
+	> Java program to demonstrate that we can have different return types if return type in overridden method is 	   	sub-type.
+~  Constructors, static initializers, and instance initializers are NOT MEMBERS and therefore are not inherited.
+~  STATIC VARIABLES are inherited as long as they're are not hidden by another static variable with the same identifier in        the child class.
+~ Cannot REDUSE THE VISIBILITY of method inherited method from parent class.
+------------------------------------------------
+
+
+OVERRIDING+++++++++++++++++++++++++++++++++++++++++++++++++++++
+~ Dynamic Method Dispatch
+	> " PARENT_CLASS " Ob = new " CHILD_CLASS() " ;
+	> When parent class reference refers to the child class object
+	   then the overriding method (method of child class) is called.
+	   This is called dynamic method dispatch
+	> In dynamic method dispatch the object can call the overriding methods
+	  of child class and all the non-overridden methods of base class but it cannot 
+	  call the methods which are newly declared in the child class.
+	> because during method call which method(parent class or child class) is to be executed
+	  is determined by the TYPE of OBJECT.
+------------------------------------------------
+
+
+AGGREGATION+++++++++++++++++++++++++++++++++++++++++++++++++++++
+-02-2022
+~ Has-A relationship.
+~ Basically , we are using other classes's object ( Class with data members required by us in our class ) as a data member in       our class.
+	> So that we can bind that other classes object with our classe's object , so that values in those two separate objects
+	  are also binded together. ex. STUDENT name , id---ADDRESS house name,city name.
+~ U can do that by passing Req. classe's object(after stuffing it with info) from the main classes object from the main method 
+	> and assign that object to the its counterpart ( the data member object that we created ).
+------------------------------------------------
+
+POLYMORPHISM+++++++++++++++++++++++++++++++++++++++++++++++++++++
+~ Since method invocation is determined by the JVM not compiler, it is known as RUNTIME polymorphism.
+~ A method is overridden, NOT the  MEMBER VARIABLES, so runtime polymorphism can't be achieved by data members.
+------------------------------------------------
+
+INTERFACE+++++++++++++++++++++++++++++++++++++++++++++++++++++
+~ The Java compiler adds Public and Abstract keywords before the interface Method. Moreover, it adds Public, Static and          Final keywords before data members.
+	> So, after implementin user can not reduce the visibility of inherited methods of interface.
+~ An Abstract class implementing an interface doesn't has to provide implementation to all its methods.
+~ Can perform multiple inheritance with Interface because implemntation is provided in the class implementing the    interface.
+~ An interface extends another interface & not another class.
+------------------------------------------------
+
+
+PACKAGE+++++++++++++++++++++++++++++++++++++++++++++++++++++
+~ All classes of the package which we wish to access outside the package must be declared public.
+~ You don't have to Inherit classes after importing to use them,
+	> Just import , and make sure they are public.
+~ STATIC IMPORTS
+	> SYNTAX " import static PACKAGE.CLASS.* ", i.e u can only access a class and all its static members.
+------------------------------------------------
+
+WRAPPER CLASS+++++++++++++++++++++++++++++++++++++++++++++++++++++
+~ belong to java.lang package.
+~ The Integer class has a static method that returns a String object representing the specified int parameter. 
+	> String str1 = Integer.toString(a);
+-----------------------------------------------------------
+
+ARRAY++++++++++++++++++++++++++++++++++++++++++++
+~ for each loop :-
+	> SYNTAX --> for( int i : array )
+			System.out.println( i ); <---------------NOTE
+-------------------------------------------------------
+
+STRING Class+++++++++++++++++++++++++++++++++++++++++++++++++++++
+~ Java provides three classes to represent a sequence of characters: String, StringBuffer, and StringBuilder.
+~ when you make a String ob then you can access the various methods of String class using that object   aswell
+	> for ex. ob.equals(), ob.equalsIgnoreCase() , ob.Compareto() , ob.substring()
+~ CONCATENATION
+	> "+" operator 
+		>> After a string literal, all the + will be treated as string concatenation operator.
+~ SPLIT ( )
+	> can provide set of regex as well. ex. instead of split ( a ) , split ( a, m , - , .? .... )
+------------------------------------------------------------
+
+toString () Method++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	~Object Class...........................................default inheritance of toString method...................GfG
+		> toString() will give you String representation of an OBJECT , and not a primitive 		types. 
+		Declaration SYNTAX :- public String toString();
+			>> ex: Practise ob = new Practise();
+		       		String s = ob.toString();	OR 	System.out.println( ob );
+	~ Integer Class
+	            >> Declaration SYNTAX :- static String toString()
+			> Integer.toString() returns String object of a integer value , NOTE :- can be 						invoked only using "Integer." or with an object of Integer ( WRAPPER ) class.
+		>> Declaration SYNTAX :- static String toString(int a)
+			> this version allows to pass a primitive integer type value as well.
+~ Basically none of the toString() method of any class can be invoked using a primitive type.
+   	>> to get a String representation of  a primitive type use :- 
+		SYNTAX  :- static String valueOf(int num)
+---------------------------------------------------------------------
+
+ValueOf ()+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+	~ String Class
+		>  static String valueOf(int num)
+		>> gives the String representation of any primitive type.
+	~ Integer Class
+		1> public static Integer valueOf(int a)
+			>> is used to return an Integer instance.
+		2> static Integer valueOf(String str)
+			>> is used to return an Integer object, holding the value of the specified String 			   		 str.
+------------------------------------------------------------------
+
+EXCEPTION Handling+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~ Method throwing the exception must handle it as well.
+~ USER DEFINED Exceptions
+	> public Exception(String message) ==> Constructs a new exception with the specified detail 		message.
+	           >> message - the detail message. The detail message is saved for later retrieval by 				the Throwable.getMessage() method. 
+	> public String getMessage() ==> Returns the detail message string of this throwable.
+				   which may be null.
+~ If we throw a checked exception using throw keyword, it is must to handle the exception 
+   using catch block or the method must declare it using throws declaration.
+~ By default, Checked Exceptions are not forwarded in calling chain (propagated).
+	>> whereas the unChecked exceptions are propagated.
+---------------------------------------------------------------------
+
+ENUM+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+Q Why printing an enum Constant prints the constant's name ?
+Ans. because the toString() method is overriden in Enum class implicitly, and as 
+      Every enum constant represents an object of type enum, printing an enum constant prints its name.
+
+~ Don't think enum constants hold any value inside them, 
+		they are just variables and objects in themselves, that can not be initialized,
+	   	but can contain fields to call overloaded constructors.
+	>>  when u print an Enum array using values() method 
+		the base index just prints the enum " objects " in the array using toString() method.
+~ Enum consists of PRIVATE CONSTRUCTOR that's why we cannot extend/inherit an enum class.
+------------------------------------------------------------------------
+
+MultiThreading++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~ start()
+	> Causes this thread to begin execution; the Java Virtual Machine calls the run method 	of this 	thread.
+~ 5 is the  NORM_PRIORITY Priority, this is the default priority. 
+    	>  public final static int MIN_PRIORITY = 1;
+    	   public final static int NORM_PRIORITY = 5;
+    	   public final static int MAX_PRIORITY = 10;
+~ If you sleep a thread for the specified time, the thread scheduler picks up another thread and    so on.
+-------------------------------------------------------------------------
+
+MISC++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~ Getname ( ) 
+	> Thread class
+		>> Thread.getName( );
+	> java.lang.class class
+		>> Invoke using object_Name.getClass( ).getName( )  	OR
+		>> Class_Name.class.getName( ) 
+----------------------------------------------------------------------------
