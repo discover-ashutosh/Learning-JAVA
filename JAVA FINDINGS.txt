@@ -1,15 +1,16 @@
---
----
+GETTING STARTED with JAVA +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ JAVA package includes subpackages like lang , util , awt , applet , net , io etc.
 ~ There can be only one public class in a java source file and it must be saved by the public class name.
-~ "Class" is a "Java class" that provide methods to manipulate "Java class" while "class" is a Java keyword     used to declare a "Java class".
+~ "Class" is a "Java class" that provide methods to manipulate "Java class" while "class" is a Java keyword     used to declare a     "Java class".
 ~ inbuilt methods provided by the pre-defined classes are generally static ex:-
 	> toString(i) method of Integer classs and all the methods of Math class.
-~  println will leave the cursor on the next line , not print the output on the next line.
+~ println will leave the cursor on the next line , & not "print the output" on the next line.
 ~ INSTANCEOF operator doesnot requires brackets.
-~  Every class in Java is directly or indirectly derived from the Object class, henceforth it is a child of the        Object class............................more GfG.
+~ Every class in Java is directly or indirectly derived from the Object class, henceforth it is a child of the        Object        	class............................more GfG.
+------------------------------------------------------------------
 
-RUNNING PROG++++++++++++++++++++++++++++++++++++++++++++++
+
+RUNNING PROG+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ You Can Run the java program in two ways from CMD.
 	> Directly run the java program by ----> " java programName.java "
 	In this type compilation and Execution happens at runtime. 
@@ -29,12 +30,13 @@ RUNNING PROG++++++++++++++++++++++++++++++++++++++++++++++
 				OTHERWISE
 	> return to directory in which the concerned package is present and type
 		>> "java  PACKAGE_NAME.CLASS_NAME." 
-------------------------------------------------
+------------------------------------------------------------------------------------------------------------------
 
-MAIN() Method++++++++++++++++++++++++++++++++++++++++++++++
+
+MAIN() Method++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ Why is MAIN() method static ?
 ~ But JVM calls main() method which receives string array as arguments      only.
-------------------------------------------------
+------------------------------------------------------------------------------------------------
 
 
 Objects+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
