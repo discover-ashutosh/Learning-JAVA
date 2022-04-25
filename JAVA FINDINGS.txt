@@ -164,6 +164,7 @@ POLYMORPHISM+++++++++++++++++++++++++++++++++++++++++++++++++++++
 ---------------------------------------------------------------------------------------------------------------------
 
 INTERFACE++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~ Classes should not be subclassed unless the programmer intends on modifying or enhancing the fundamental behavior of the class.
 ~ The Java compiler adds Public and Abstract keywords before the interface Method. Moreover, it adds Public, Static and          Final keywords before data members.
 	> So, after implementin user can not reduce the visibility of inherited methods of interface.
 ~ An Abstract class implementing an interface doesn't has to provide implementation to all its methods.
@@ -271,6 +272,10 @@ MultiThreading++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     	   public final static int NORM_PRIORITY = 5;
     	   public final static int MAX_PRIORITY = 10;
 ~ If you sleep a thread for the specified time, the thread scheduler picks up another thread and    so on.
+~ Cannot declare a checked exception on derived class run method inherited from Thread of Runnable class.
+~ Getname ( ) 
+	> Thread class
+		>> Thread.getName( );
 ---------------------------------------------------------------------------------------------------------------------
 
 
