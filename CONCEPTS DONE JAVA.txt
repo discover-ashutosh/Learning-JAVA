@@ -76,6 +76,13 @@ JAVA : JAVATPOINT, Oracle.docs
 	> Creating a thread.....................OracleJacaDocs.............javaTpoint
 	> Thread Schduler
 		> thread scheduling algorithms.
+	> Main thread.......................PENDING
+	> interrupt.............................PENDING
+	> join( )
+		> ThreadJoinExample1.java..................DOUBT
+	> GetName( ) , setName( ) , currentThread( )
+	> getPriority( ) , setPriority( )
+	> isDaemon() , setDaemon( ).
 
 MISC+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ String name = obj.getClass().getName();.................................. 14-02-2022
