@@ -8,7 +8,8 @@ GETTING STARTED with JAVA ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	> toString(i) method of Integer classs and all the methods of Math class.
 ~ println will leave the cursor on the next line , & not "print the output" on the next line.
 ~ INSTANCEOF operator doesnot requires brackets.
-~ Every class in Java is directly or indirectly derived from the Object class, henceforth it is a child of the        Object        	class............................more GfG.
+~ EVERY CLASS in Java is directly or indirectly DERIVED from the Object class, henceforth it is a child of the               Object class............................more GfG.
+	> Object class has a constructor that can be called from any class using " super() ".
 ------------------------------------------------------------------
 
 
@@ -122,7 +123,7 @@ FINAL+++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 INHERITANCE+++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ object of sub class inherits the members of parent class.
-~ Whenever you create the instance of subclass, an instance of parent class    is created implicitly which is referred by SUPER reference variable.
+~ Whenever you create the instance of subclass, an instance of parent class is created implicitly which is referred by SUPER reference variable.
 ~ You cannot use this or super keyword in the main method.
 ~ Use INHERITANCE when u need IS-A relationship , otherwise HAS-A    relationship;
 ~ COVARIANT RETURN TYPE
@@ -130,6 +131,10 @@ INHERITANCE+++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~  Constructors, static initializers, and instance initializers are NOT MEMBERS and therefore are not inherited.
 ~  STATIC VARIABLES are inherited as long as they're are not hidden by another static variable with the same identifier in        the child class.
 ~ Cannot REDUSE THE VISIBILITY of method inherited method from parent class.
+~ You can only extend one class but you implements multiple interfaces as your need.
+	>  But you need to declare extends before implements.
+~ EVERY CLASS in Java is directly or indirectly DERIVED from the Object class, henceforth it is a child of     the Object class............................more GfG.
+	> Thats why you can use " super(); " from a classes's constructor without even extending another 	   class.
 ------------------------------------------------
 
 
@@ -170,6 +175,8 @@ INTERFACE+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ An Abstract class implementing an interface doesn't has to provide implementation to all its methods.
 ~ Can perform multiple inheritance with Interface because implemntation is provided in the class implementing the    interface.
 ~ An interface extends another interface & not another class.
+~ You can only extend one class but you implements multiple interfaces as your need.
+	>  But you need to declare extends before implements.
 -------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -276,6 +283,9 @@ MultiThreading++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ Getname ( ) 
 	> Thread class
 		>> Thread.getName( );
+~ You can access the constructor of your Thread object and of THread class if
+	> you are creating thread obj's by extending THread Class 
+	> which you won't be able to do if have implemented Runnable class
 ---------------------------------------------------------------------------------------------------------------------
 
 
