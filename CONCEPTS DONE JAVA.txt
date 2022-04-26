@@ -74,6 +74,7 @@ JAVA : JAVATPOINT, Oracle.docs
 ~ System.currentTimeMillis()	
 ~ MultiThreading 
 	> Creating a thread.....................OracleJacaDocs.............javaTpoint
+		>> READ Runnable Interface .................OracleJavaDocs
 	> Thread Schduler
 		> thread scheduling algorithms.
 	> Main thread.......................PENDING
@@ -83,6 +84,9 @@ JAVA : JAVATPOINT, Oracle.docs
 	> GetName( ) , setName( ) , currentThread( )
 	> getPriority( ) , setPriority( )
 	> isDaemon() , setDaemon( ).
+	> Thread Pool........................PENDING
+	> Thread Group Methods........................Pending
+	> SHutDown Hook....................PENDING
 
 MISC+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ String name = obj.getClass().getName();.................................. 14-02-2022
