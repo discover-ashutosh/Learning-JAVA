@@ -65,12 +65,17 @@ JAVA : JAVATPOINT, Oracle.docs
 	  split( ), substring( )
 	> toUpperCase(), trim() ,  startsWith(), charAt(), intern(), replace()
 	> diff valueOf( ) / parseInt( )..........................................22:10 28-02-2022
+	> format () method.
 ~ StringBuffer class
 	> append, insert() , delete() , replace(), reverse()
 	> Diff btwn String and StringBuffer.
 ~ Exception Handling..............................................F-21:32 26-03-2022
 	~ EH rules while method Overiiding.
-~ Inner class....................................I 27-03-2022.......F-10:19 28-03-2022
+~ Inner class.................................... 28-03-2022
+	> Member Inner class
+	> Anonymous Inner class
+	> Local Inner class
+	> static nested class
 ~ System.currentTimeMillis()	
 ~ MultiThreading 
 	> Creating a thread.....................OracleJacaDocs.............javaTpoint
