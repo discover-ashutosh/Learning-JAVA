@@ -206,6 +206,7 @@ ARRAY+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 STRING Class++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ Java provides three classes to represent a sequence of characters: String, StringBuffer, and StringBuilder.
 ~ STRING CONSTANT POOL
+	>> SCP is only used for storing String literals.
 	What happens when u create a string using "new" keyword.............https://www.javatpoint.com/java-	    string
 	>> { String s = new String("Welcome"); 
 	     String a = "Welcome"; }
@@ -215,7 +216,7 @@ STRING Class++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	   Just because two String objects are both stored in the heap and have equal values doesn't make 	     them the same object, which is what == is checking.
 	>> The EQUALITY OPERATOR (==) compares object identity, not object contents. This is why we use 	.equals() to compare objects when we care about their values being equal
 ~ charAt() method belongs to String class. 
-~ when you make a String ob then you can access the various methods of String class using that object   aswell
+~  String ob is required to access the various methods of String class using that object   aswell
 	> for ex. ob.equals(), ob.equalsIgnoreCase() , ob.Compareto() , ob.substring()
 ~ CONCATENATION
 	> "+" operator 
@@ -300,6 +301,7 @@ MultiThreading++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 SCANNER Class+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ Parsing : to analyze or breadkdown the code or to convert one value into another
+~ { String s = scanner.next(); } <= This string object is stored in the heap.
 ---------------------------------------------------------------------------------------------------------------------
 
 MISC+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
