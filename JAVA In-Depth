@@ -1,0 +1,6 @@
+PROCESS => Is a program that has attained the ready state and is scheduled for execution in the CPU.
+           - What an user sees as an application is actually a complete set of processes cooperating with each other.
+           - A process has self-contained execution environment meaning that a process has a private and complete set of run-time 
+           resources including its own memory space.
+           - To facilitate communication between processes, most operating systems support Inter Process Communication (IPC)                    resources, such as pipes and sockets.
+           - Cost of communication between the process is high. Switching from one process to another requires some time for                  saving and loading registers, memory maps, updating lists, etc.
