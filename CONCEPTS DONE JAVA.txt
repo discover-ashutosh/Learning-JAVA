@@ -83,6 +83,8 @@ JAVA : JAVATPOINT, Oracle.docs
 	> static nested class
 ~ System.currentTimeMillis()	
 ~ MultiThreading 
+	> Concept of concurrent programming and multithreading.....................OracleDocs.
+		> Definition of Time Slicing
 	> Creating a thread.....................OracleJacaDocs.............javaTpoint
 		>> READ Runnable Interface .................OracleJavaDocs
 	> Thread Schduler
