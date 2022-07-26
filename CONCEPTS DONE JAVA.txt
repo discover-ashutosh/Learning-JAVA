@@ -88,7 +88,7 @@ JAVA : JAVATPOINT, Oracle.docs
 	> Creating a thread.....................OracleJacaDocs.............javaTpoint
 		>> READ Runnable Interface .................OracleJavaDocs
 	> Thread Schduler
-		> thread scheduling algorithms.
+		> FCFS, Priority, Time Slicing.
 	> Main thread.......................PENDING
 	> interrupt.............................PENDING
 	> join( )
