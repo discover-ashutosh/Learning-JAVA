@@ -1,6 +1,8 @@
 
 
 GETTING STARTED with JAVA +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~ Check java version
+	> cmd => java -version
 ~ JAVA package includes subpackages like lang , util , awt , applet , net , io etc.
 ~ There can be only one public class in a java source file and it must be saved by the public class name.
 ~ "Class" is a "Java class" that provide methods to manipulate "Java class" while "class" is a Java keyword     used to declare a     "Java class".
