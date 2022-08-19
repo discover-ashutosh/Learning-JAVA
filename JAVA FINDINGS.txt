@@ -10,6 +10,9 @@ GETTING STARTED with JAVA ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ INSTANCEOF operator doesnot requires brackets.
 ~ EVERY CLASS in Java is directly or indirectly DERIVED from the Object class, henceforth it is a child of the               Object class............................more GfG.
 	> Object class has a constructor that can be called from any class using " super() ".
+~ You cannot print to console or initialize a variable (ie. initialization without declaration) outside a method along with instant  
+  variables!
+  	> Basically, Anything that has to be processed has to happen within the body of the method.
 ------------------------------------------------------------------
 
 
