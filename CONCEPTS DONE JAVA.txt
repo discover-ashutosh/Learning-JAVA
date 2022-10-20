@@ -99,7 +99,7 @@ JAVA : JAVATPOINT, Oracle.docs
 	> Thread Pool........................PENDING
 	> Thread Group Methods........................Pending
 	> SHutDown Hook....................PENDING
-~ Scanner Class
+~ Diff btwn vscode user settings and settings.json, and json in general
 
 MISC+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ String name = obj.getClass().getName();.................................. 14-02-2022
