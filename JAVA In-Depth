@@ -5,3 +5,5 @@ PROCESS => Is a program that has attained the ready state and is scheduled for e
            - To facilitate communication between processes, most operating systems support Inter Process Communication (IPC)                            resources, such as pipes and sockets.
            - Cost of communication between the process is high. Switching from one process to another requires some time for                            saving and loading registers, memory maps, updating lists, etc.
            - Most implementations of the Java virtual machine run as a single process.
+           
+Native Method => Implementation of a native method is accomplished in another programming language.
