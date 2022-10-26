@@ -7,3 +7,5 @@ PROCESS => Is a program that has attained the ready state and is scheduled for e
            - Most implementations of the Java virtual machine run as a single process.
            
 Native Method => Implementation of a native method is accomplished in another programming language.
+
+You cannot declare nested classes directly in java.
