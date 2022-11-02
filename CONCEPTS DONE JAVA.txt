@@ -75,6 +75,7 @@ JAVA : JAVATPOINT, Oracle.docs
 	> append, insert() , delete() , replace(), reverse()
 	> Diff btwn String and StringBuffer.
 ~ Exception Handling..............................................F-21:32 26-03-2022
+	~ Mechanism of exception handling........Oracle docs...........11/2/2022
 	~ EH rules while method Overiiding.
 ~ Inner class.................................... 28-03-2022
 	> Member Inner class
