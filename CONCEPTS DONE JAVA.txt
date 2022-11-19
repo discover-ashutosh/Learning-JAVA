@@ -71,6 +71,7 @@ JAVA : JAVATPOINT, Oracle.docs
 	> toUpperCase(), trim() ,  startsWith(), charAt(), intern(), replace()
 	> diff valueOf( ) / parseInt( )..........................................22:10 28-02-2022
 	> format () method.
+	> charAt() method................javaDocs.........19/11/22
 ~ StringBuffer class
 	> append, insert() , delete() , replace(), reverse()
 	> Diff btwn String and StringBuffer.
