@@ -102,9 +102,11 @@ JAVA : JAVATPOINT, Oracle.docs
 	> SHutDown Hook....................PENDING
 	
 VSCODE+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+~ How to use Double quotations in user snippets in vscode.
 ~ Diff btwn vscode user settings and settings.json, and json in general
 ~ How to use labels in Vs codel.
 --------------------------------------------------------------------------------------------------------
 MISC+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 ~ String name = obj.getClass().getName();.................................. 14-02-2022
+~ Differnece btwn length() and length.
 -------------------------------------------------------------------------------------------
